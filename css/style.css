@@ -1,6 +1,7 @@
 :root{
   --main-font: 'Poppins', sans-serif;
   --main-color: #FD8558;
+  --dark-color: #333333;
 }
 body{
   margin: 0;
@@ -51,6 +52,7 @@ button{
   background-color: var(--main-color);
   font-weight: 700;
   font-size: 15px;
+  border: 0;
   line-height: 30px;
 }
 
@@ -75,6 +77,9 @@ button{
 .container{
   max-width: 1440px;
   margin: 0 auto 0 auto;
+}
+.half_width{
+  width:50%;
 }
 .pages_list{
 }
@@ -139,7 +144,7 @@ button{
 .about_info_div{
   margin: 0 0 58px 135px;
 }
-.about_us_small{
+.main_color_14px{
   margin: 0;
   font-weight: 400;
   font-size: 14px;
@@ -152,7 +157,7 @@ button{
   font-weight: 400;
   font-size: 40px;
   line-height: 54px;
-  color: #333333;
+  color: var(--dark-color);
   padding-right: 105px;
 }
 .quisque{
@@ -160,7 +165,7 @@ button{
   font-size: 18px;
   line-height: 28px;
   text-transform: capitalize;
-  color: #222222;
+  color: var(--dark-color);
   margin: 0 0 11px;
 }
 .latin_div{
@@ -177,7 +182,7 @@ button{
   justify-content: space-between;
 }
 .quote, .quote_author{
-  color: #222222;
+  color: var(--dark-color);
 }
 .quote{
   font-style: normal;
@@ -226,4 +231,188 @@ button{
 .trans_circle{
   margin: 0 40px 0 40px;
   transform: translate(0, -50%);
+}
+.portfolio_intro{
+  justify-content: space-between;
+  align-items: flex-end;
+  padding-top: 101px;
+  padding-left: 135px;
+  padding-right: 135px;
+}
+.dark_32px{
+  margin: 0;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 38px;
+  color: var(--dark-color);
+}
+.works_heading{
+  text-transform: lowercase;
+  padding-right: 27px;
+  width: calc(100% - 27px);
+  text-align: right;
+  font-size: 200px;
+  line-height: 180px;
+  margin: 0 0 -20px 0;
+}
+.works_pictures{
+  margin: 0 0 115px 0;
+  height: 720px;
+  text-transform: capitalize;
+}
+.side_section_picture{
+  width: 25%;
+  justify-content: flex-end;
+}
+.work_picture{
+  width: 100%;
+  height: 50%;
+  justify-content: flex-end;
+}
+.work_picture_form{
+  position: relative;
+  margin: 0 auto 40px auto;
+  width: 320px;
+  font-size: 24px;
+  line-height: 20px;
+  text-align: end;
+  background-color: rgba(255, 255, 255, 0.9);;
+}
+.work_picture label{
+  width: 100%;
+  justify-content: space-around;
+  align-items: center;
+  margin: 47px 0 46px 0;
+  text-align: center;
+}
+.picture_input{
+  height: 45px;
+  width: 45px;
+  border-radius: 0;
+  padding: 40px 0 40px 0;
+}
+.central_image{
+  height: 100%;
+  width: 50%;
+}
+.central_image form{
+  width: 680px;
+}
+.central_image label{
+  margin: 27px 0 26px 0;
+  justify-content: space-between;
+  padding: 20px;
+}
+.crazy_max{
+  background-image: url("../images/crazy_max.jpg");
+}
+.stylish_house{
+  background-image: url("../images/stylish_house.jpg");
+}
+.oblique_house{
+  background-image: url("../images/oblique_house.jpg");
+}
+.difference{
+  background-image: url("../images/differents.jpg");
+}
+.our_skills_div{
+  justify-content: center;
+  width: calc(100% - 300px);
+  margin: 0 auto 151px auto;
+}
+.our_skills_div .additional_text{
+  text-align:left;
+  padding-right: 70px
+}
+.stats_div{
+  width: 100%;
+  height: 10px;
+  background-color: #EEEEEE;
+  overflow: visible;
+}
+.stats_span{
+  width:90%;
+  height:100%;
+  background: linear-gradient(45deg, #FF4803, #FFAE35);
+}
+#illustration_span{
+  width: 90%;
+}
+#web_design_span{
+  width: 80%;
+}
+#development_span{
+  width: 95%;
+}
+.our_skills_text{
+  justify-content: center;
+}
+.skills_percent{
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 23px;
+  color: #999999;
+  top: -37px;
+  margin: 0;
+}
+.illustration_percent{
+  right:10%
+}
+.development_percent{
+  right: 5%;
+}
+.wb_percent{
+  right: 20%;
+}
+.team{
+  align-items: center;
+}
+.team .dark_32px{
+  margin: 28px 0 24px 0;
+  text-transform: capitalize;
+}
+.grid_images{
+  padding: 0 150px 65px 150px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.image{
+  margin: 15px;
+  height: 350px;
+  width: 350px;
+}
+.anna{
+  background: url("../images/anna.jpg");
+}
+.andy{
+  background: url("../images/andy.jpg");
+}
+.katy{
+  background: url("../images/katy.jpg");
+}
+.margo{
+  background: url("../images/margo.jpg");
+}
+.kanye{
+  background: url("../images/kanye.jpg");
+}
+.marta{
+  background: url("../images/marta.jpg");
+}
+.name_label, .job_label{
+  color: white;
+  margin: 0;
+}
+.name_label{
+  font-size: 24px;
+  line-height: 30px;
+}
+.job_label{
+  font-size: 14px;
+  line-height: 24px;
+  text-align: center;
+}
+.start_work_button{
+  margin: 0 0 115px 0;
+  text-transform: capitalize;
 }
