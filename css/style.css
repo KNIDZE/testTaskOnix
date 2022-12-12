@@ -774,9 +774,32 @@ footer .container {
   display: block;
   color: #BABABA;
 }
-footer a{
+
+footer a {
   transition-duration: 0.1s;
 }
-footer a:hover{
+
+footer a:hover {
   color: white;
+}
+
+.user_info {
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.user_info a, .my_contact a {
+  color: var(--dark-color);
+}
+
+.user_info a:hover, .my_contact a:hover {
+  color: var(--main-color);
+}
+
+.my_contact {
+  padding: 100px 0 100px 0;
+  right: 100px;
+  background-color: white;
 }
